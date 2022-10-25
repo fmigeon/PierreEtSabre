@@ -10,9 +10,10 @@ public class HistoireTP4 {
 	public static void main(String[] args) {
 		Humain prof = new Humain("Prof", "kombucha", 54);
 		prof.direBonjour();
-		prof.perdreArgent(12);
+		prof.acheter("une boisson", 12);
 		prof.boire();
-		prof.gagnerArgent(20);
+		prof.acheter("une jeu", 2);
+//		prof.gagnerArgent(20);
 		
 		Commercant marchand = new Commercant("Marchand", "thé", 20);
 		marchand.direBonjour();

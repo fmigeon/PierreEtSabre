@@ -30,11 +30,17 @@ public class Humain {
 		parler("Mmmm, un bon verre de " + boissonFavorite + " ! GLOUPS !");
 	}
 	
-	public void gagnerArgent (int gain) {
+	public void acheter(String bien, int prix) {
+		parler("J'ai " + getQteArgent() + " sous en poche. " +
+				"Je vais pouvoir m'offrir " + bien + " à " + prix + " sous.");
+		perdreArgent(prix);
+	}
+	
+	protected void gagnerArgent (int gain) {
 		qteArgent += gain;
 	}
 	
-	public void perdreArgent (int perte) {
+	protected void perdreArgent (int perte) {
 		qteArgent -= perte;
 	}
 	
