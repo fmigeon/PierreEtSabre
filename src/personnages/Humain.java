@@ -38,8 +38,8 @@ public class Humain {
 		qteArgent -= perte;
 	}
 	
-	private void parler (String texte) {
-		System.out.println(getNom() + " - " + texte);
+	protected void parler (String texte) {
+		System.out.println("("  + getNom() + ") - " + texte);
 	}
 	
 
