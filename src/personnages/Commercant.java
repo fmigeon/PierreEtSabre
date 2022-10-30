@@ -3,7 +3,7 @@ package personnages;
 public class Commercant extends Humain {
 
 	public Commercant(String nom, String boissonFavorite, int qteArgent) {
-		super(nom, boissonFavorite, qteArgent);
+		super(nom, "thé", qteArgent);
 	}
 
 	public int seFaireExtorquer() {
