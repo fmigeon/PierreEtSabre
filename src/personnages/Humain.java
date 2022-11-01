@@ -50,6 +50,20 @@ public class Humain {
 		nouvelleConnaissance.repondre(this);
 		memoriser(nouvelleConnaissance);
 	}
+	
+	public void listerConnaissances() {
+		String listeNoms = "";
+		
+		for (int i = 0; i < nbConnaissances; i++) {
+			listeNoms += memoire[i].getNom() + ", ";
+		}
+		final int longueurListe = listeNoms.length();
+		if (longueurListe  > 2) {
+			parler("Je connais beaucoup de monde dont : " +  listeNoms.substring(0, longueurListe-2) );
+		} else {
+			parler("Je n'ai pas de connaissances.");
+		}
+	}
 
 	private void repondre(Humain autreHumain) {
 		direBonjour();
