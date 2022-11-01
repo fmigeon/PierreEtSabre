@@ -19,7 +19,7 @@ public class Ronin extends Humain {
 		final int force = honneur * 2;
 		if (force >= adversaire.getReputation()) {
 			parler("Je t'ai eu petit yakusa ! ");
-			final int gain = adversaire.perdre();
+			gagnerArgent(adversaire.perdre());
 			honneur++;
 		} else {
 			decrHonneur();

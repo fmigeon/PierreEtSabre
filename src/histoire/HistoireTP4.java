@@ -13,21 +13,20 @@ public class HistoireTP4 {
 		prof.acheter("une boisson", 12);
 		prof.boire();
 		prof.acheter("une jeu", 2);
-//		prof.gagnerArgent(20);
 		
-		Commercant marchand = new Commercant("Marchand", "thé", 20);
-		marchand.direBonjour();
-		marchand.seFaireExtorquer();
-		marchand.recevoir(15);
-		marchand.boire();
+		Commercant marco = new Commercant("Marco", "thé", 20);
+		marco.direBonjour();
+		marco.seFaireExtorquer();
+		marco.recevoir(15);
+		marco.boire();
 		
 		Yakuza leNoir = new Yakuza("Yaku Le Noir", "whisky", 30, "Warsong");
 		leNoir.direBonjour();
-		leNoir.extorquer(marchand);
+		leNoir.extorquer(marco);
 		
 		Ronin roro = new Ronin("Roro", "shochu", 60);
 		roro.direBonjour();
-		roro.donner(marchand);
+		roro.donner(marco);
 		
 		roro.provoquer(leNoir);
 		
