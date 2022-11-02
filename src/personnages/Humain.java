@@ -2,7 +2,7 @@ package personnages;
 
 public class Humain {
 
-	private static final int TAILLE_MEMOIRE = 3;
+	private static final int TAILLE_MEMOIRE = 50;
 
 	private String nom;
 	private String boissonFavorite;
