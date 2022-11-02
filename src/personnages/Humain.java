@@ -2,7 +2,7 @@ package personnages;
 
 public class Humain {
 
-	private static final int TAILLE_MEMOIRE = 50;
+	private static final int TAILLE_MEMOIRE = 3;
 
 	private String nom;
 	private String boissonFavorite;
@@ -81,6 +81,7 @@ public class Humain {
 		for (int i = 0; i < TAILLE_MEMOIRE - 1; i++) {
 			memoire[i] = memoire[i + 1];
 		}
+		nbConnaissances--;
 	}
 
 	protected void gagnerArgent(int gain) {
