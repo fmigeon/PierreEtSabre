@@ -8,7 +8,7 @@ public class Humain {
 	private String boissonFavorite;
 	private int qteArgent;
 
-	private Humain[] memoire = new Humain[TAILLE_MEMOIRE];
+	protected Humain[] memoire = new Humain[TAILLE_MEMOIRE];
 	private int nbConnaissances = 0;
 
 	public Humain(String nom, String boissonFavorite, int qteArgent) {
@@ -94,6 +94,10 @@ public class Humain {
 
 	protected void parler(String texte) {
 		System.out.println("(" + getNom() + ") - " + texte);
+	}
+
+	protected int getNbConnaissances() {
+		return nbConnaissances;
 	}
 
 }
