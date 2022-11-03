@@ -1,6 +1,7 @@
 package histoire;
 
 import personnages.Commercant;
+import personnages.GrandMere;
 import personnages.Humain;
 import personnages.Ronin;
 import personnages.Samourai;
@@ -44,6 +45,16 @@ public class HistoireTP5 {
 		Samourai akira = new Traitre("Akira", "whisky", 50, "Miyamoto");
 		Ronin hiro = new Traitre("Hiro", "saké", 20, "Miyamoto");
 		Humain nori = new Traitre("Nori", "whisky", 70, "Miyamoto");
+		
+		GrandMere grandMere = new GrandMere("Grand-Mère", 10);
+		grandMere.faireConnaissance(akimoto);
+		grandMere.faireConnaissance(yaku);
+		grandMere.faireConnaissance(masako);
+		grandMere.faireConnaissance(kumi);
+		grandMere.faireConnaissance(marco);
+		grandMere.faireConnaissance(chonin);
+		grandMere.ragoter();
+
 
 	}
 

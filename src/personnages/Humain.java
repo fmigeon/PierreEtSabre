@@ -70,7 +70,7 @@ public class Humain {
 		memoriser(autreHumain);
 	}
 
-	private void memoriser(Humain autreHumain) {
+	protected void memoriser(Humain autreHumain) {
 		if (nbConnaissances == TAILLE_MEMOIRE) {
 			effacerLaPremiereConnaissanceEtDecalerVersLaGauche();
 		}
